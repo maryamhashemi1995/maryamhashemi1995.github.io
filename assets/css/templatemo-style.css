@@ -6,11 +6,6 @@ https://templatemo.com/tm-531-reflux
 
 */
 
-@import url(fontawesome.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 #page-wraper {
     background: url(../images/c7.jpg) no-repeat center center fixed;
