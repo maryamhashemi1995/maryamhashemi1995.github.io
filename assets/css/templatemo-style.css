@@ -303,7 +303,7 @@ html {
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
-    background-color: #000080;
+    background-color: #000;
     margin: 10px auto;
 }
 
@@ -330,7 +330,7 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #000080;
+    background-color: #000;
     color: #000;
 }
 
@@ -416,7 +416,7 @@ button:hover {
 }
 
 .service-item:hover p {
-    color: #4a4a4a;
+    color: #000;
 }
 
 .service-item .service-icon {
