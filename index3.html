@@ -142,6 +142,60 @@
     padding: 20px;
   }
 }
+
+  .news-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 5px solid #f76b1c;
+  border-radius: 16px;
+  padding: 20px 22px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.news-meta time {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.news-card p {
+  margin: 0;
+  color: #000;
+  line-height: 1.8;
+}
+
+.news-tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.news-card.upcoming {
+  border-left-color: #0f766e;
+}
 </style>
 
     <title>Maryam Hashemi, Ph.D.</title>
@@ -367,22 +421,67 @@ https://templatemo.com/tm-531-reflux
 
 
 
-      <section class="section contact-me" data-section="section6">
-        <div class="container">
-          <div class="content-shell">
-            <div class="section-heading">
-              <h2>News</h2>
-              <div class="line-dec"></div>
-            </div>
-            <ol class="news-list">
-              <li>I am starting a new role as a Data Scientist at the City Futures Research Centre, where I apply large language models (LLMs) and machine learning techniques to improve development application processes in the urban construction sector.</li>
-              <li>I recently concluded my time at QUT to transition into a new role. It was a rewarding experience to work with an outstanding team at QUT and RACQ, where I developed and applied my expertise in fuel market modelling and economic modelling to improve predictive outcomes.</li>
-              <li>I was recently awarded a $12,000 Writing Fellowship grant to support and promote high-quality publications at UNSW.</li>
-            </ol>
+<section class="section contact-me" data-section="section6">
+  <div class="container">
+    <div class="content-shell">
+      <div class="section-heading">
+        <h2>News</h2>
+        <div class="line-dec"></div>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card upcoming">
+          <div class="news-meta">
+            <time datetime="2026-08-15">August 15, 2026</time>
+            <span class="news-tag">Upcoming</span>
           </div>
-        </div>
-      </section>
+          <p>
+            AI is here, let's welcome it! I will have a workshop session related
+            to optimising ChatGPT and Codex in the work environment. More details are coming.
+          </p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta">
+            <time datetime="2026-07-10">July 10, 2026</time>
+            <span class="news-tag">Conference</span>
+          </div>
+          <p>
+            I presented our work, <b>From Axioms to Transparency: A User-Centric
+            Axiomatic Approach for Explainable AI in Participatory Budgeting</b>,
+            at the International Conference on AI and Emerging Technology for Sustainable
+            Future (ICAISF 2026) in Italy.
+          </p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta">
+            <time datetime="2026-03-01">March 1, 2026</time>
+            <span class="news-tag">Career</span>
+          </div>
+          <p>
+            I am starting a new role as a Data Scientist at the City Futures Research Centre,
+            where I apply large language models (LLMs) and machine learning techniques to improve
+            development application processes in the urban construction sector.
+          </p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta">
+            <time datetime="2025-12-20">December 20, 2025</time>
+            <span class="news-tag">Update</span>
+          </div>
+          <p>
+            I recently concluded my time at QUT to transition into a new role.
+            It was a rewarding experience to work with an outstanding team at QUT and RACQ,
+            where I developed and applied my expertise in fuel market modelling and economic
+            modelling to improve predictive outcomes.
+          </p>
+        </article>
+      </div>
     </div>
+  </div>
+</section>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
