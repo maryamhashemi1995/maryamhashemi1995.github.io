@@ -139,7 +139,18 @@
 }
 
 .career-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
   border-top: 4px solid #f76b1c;
+}
+
+.career-summary {
+  flex: 0 0 240px;
+}
+
+.career-details {
+  flex: 1;
 }
 
 .career-card ul {
@@ -160,6 +171,15 @@
 @media (max-width: 767px) {
   .content-card {
     padding: 20px;
+  }
+
+  .career-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .career-summary {
+    flex-basis: auto;
   }
 }
 
@@ -250,8 +270,8 @@ https://templatemo.com/tm-531-reflux
               <ul class="main-menu">
                 <li><a href="#section1">About Me</a></li>
                 <li><a href="#section2">Computer Skills</a></li>
-                <li><a href="#section3">Publications</a></li>
-                <li><a href="#section4">Career</a></li>
+                <li><a href="#section3">Career</a></li>
+                <li><a href="#section4">Publications</a></li>
                 <li><a href="#section5">Education</a></li>
                 <li><a href="#section6">News</a></li>
               </ul>
@@ -282,4 +302,340 @@ https://templatemo.com/tm-531-reflux
             </div>
             <div class="about-copy">
               <p>Hi there. This is Maryam Hashemi’s personal page.</p>
-              <p>I’m an AI scientist based in Sydney. Currently, I work as a Data Scientist at the City Futures Research Centre, where I analyse large
+              <p>I’m an AI scientist based in Sydney. Currently, I work as a Data Scientist at the City Futures Research Centre, where I analyse large-scale datasets related to urban development in Australia and apply large language models (LLMs) and machine learning techniques to extract insights.</p>
+              <p>My expertise lies in Artificial Intelligence (AI), Machine Learning (ML), and the development of intelligent systems. I am particularly passionate about transparent and trustworthy AI, leveraging AI for social good, and solving real-world problems.</p>
+              <p>The best way to reach me is by email, which you can find in the left-side menu. To stay updated with my latest work and activities, please visit the News section below.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Computer Skills</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="skills-group">
+              <div class="content-card">
+                <h3>Programming</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Python</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>C++</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>HTML</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>MATLAB</span><span>60%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>SQL</span><span>50%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 50%;"></div></div>
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h3>Libraries and Frameworks</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>TensorFlow</span><span>95%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>PyTorch</span><span>95%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Hugging Face</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Scikit-learn</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Transformers</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>OpenCV</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Gym</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h3>Tools $ Platforms</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>PostgresSQL</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Git</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>AWS</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>APIs</span><span>50%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 50%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Career</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="career-grid">
+              <div class="content-card career-card">
+                <div class="career-summary">
+                  <h3 class="role-title">Data Scientist</h3>
+                  <p class="meta-line">City Futures Research Centre, UNSW, Australia</p>
+                  <p class="meta-line">May 2026 - Present</p>
+                </div>
+                <div class="career-details">
+                  <ul>
+                    <li>Scraped, collected, and maintained Australian development and construction application data using PostgreSQL and APIs.</li>
+                    <li>Developed conversational AI language agents using RAG systems to classify applications, generate recommendations, and predict application processing timelines.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content-card career-card">
+                <div class="career-summary">
+                  <h3 class="role-title">AI Engineer</h3>
+                  <p class="meta-line">Queensland University of Technology (QUT), Australia</p>
+                  <p class="meta-line">January 2026 - May 2026</p>
+                </div>
+                <div class="career-details">
+                  <ul>
+                    <li>Designed and implemented a novel agent-based model (ABM) in Python to simulate and forecast pricing dynamics in the Brisbane fuel retail market.</li>
+                    <li>Developed predictive spatio-temporal machine learning models and data analysis tools using Python, Pandas, TensorFlow, and Scikit-learn to generate data-driven insights for stakeholders.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content-card career-card">
+                <div class="career-summary">
+                  <h3 class="role-title">AI Engineer</h3>
+                  <p class="meta-line">University of New South Wales (UNSW), Australia</p>
+                  <p class="meta-line">March 2025 - November 2025</p>
+                </div>
+                <div class="career-details">
+                  <ul>
+                    <li>Designed and implemented personalised conversational AI agents using large language models to improve user interaction and comprehension.</li>
+                    <li>Researched state-of-the-art techniques and developed the solution in Python using the Transformers library and GPT-based APIs.</li>
+                    <li>Evaluated system performance and refined the model to improve response quality, with 69% of users expressing interest in using the conversational personalised agent in the future.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content-card career-card">
+                <div class="career-summary">
+                  <h3 class="role-title">Lecturer and Tutor</h3>
+                  <p class="meta-line">University of New South Wales (UNSW), Australia</p>
+                  <p class="meta-line">November 2022 - Present</p>
+                </div>
+                <div class="career-details">
+                  <ul>
+                    <li>Taught courses including Artificial Intelligence, Deep Learning and Neural Networks, and Advanced Machine Learning.</li>
+                    <li>Key focus areas include computer vision, neural networks, reinforcement learning, statistical models, and Python.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section4">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Publications</h2>
+              <div class="line-dec"></div>
+            </div>
+            <ol class="publication-list">
+              <li>Driver Safety Development: Real-Time Driver Drowsiness Detection System Based on Convolutional Neural Network. <b>Maryam Hashemi</b>, Alireza Mirrashid and Aliasghar Beheshti Shirazi, SN Computer Science Journal, Springer, 2020. <a href="https://link.springer.com/article/10.1007/s42979-020-00306-9">Paper</a></li>
+              <li>Towards Safer Roads: A Deep Learning-Based Multimodal Fatigue Monitoring System. <b>Maryam Hashemi</b>, Bahar Farahani and Farshad Firouzi, International Conference on Omni-layer Intelligent Systems (COINS), IEEE, 2020. <a href="https://ieeexplore.ieee.org/document/9191418">Paper</a></li>
+              <li>Detection and identification of defects in 3D-printed dielectric structures via thermographic inspection and deep neural networks. Barbara Szymanik, Grzegorz Psuj, <b>Maryam Hashemi</b>, and Przemyslaw Lopato, Materials Journal, MDPI, 2021. <a href="https://www.mdpi.com/1996-1944/14/15/4168">Paper</a></li>
+              <li>Delve into Multiple Sclerosis (MS) Lesion Exploration: A Modified Attention U-Net for MS Lesion Segmentation in Brain MRI. <b>Maryam Hashemi</b>, Mahsa Akhbari, and Christian Jutten, Computers in Biology and Medicine Journal, Pergamon, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S0010482522001949">Paper</a></li>
+              <li>Understanding User Preferences in Explainable Artificial Intelligence: A Survey and a Mapping Function Proposal. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024. <a href="https://dl.acm.org/doi/10.1145/3733837">Paper</a></li>
+              <li>From Axioms to Transparency: A User-Centric Axiomatic Approach for Explainable AI in Participatory Budgeting. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, International Conference on AI and Emerging Technology for Sustainable Future (ICAISF 2026), July 2026, Catania, Italy.</li>
+              <li>A User Centric Axiomatic Path to Explainable Reinforcement Learning. <b>Maryam Hashemi</b>, Ali Darejeh, Angel Ayala, and Francisco Cruz, 2026 (Under review).</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section5">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Education</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="education-grid">
+              <div class="content-card education-card">
+                <h3>B.Sc. in Electrical Engineering</h3>
+                <p class="meta-line">University of Isfahan, Isfahan, Iran</p>
+                <p class="meta-line">2013-2017</p>
+                <p><b>Thesis Title:</b> Designing an Android application to have an Intelligent Greenhouse.</p>
+                <p><b>Description:</b> Control of vital plant conditions through Internet of Things technologies and an Android application.</p>
+                <img src="6.jpg" alt="Bachelor thesis project image">
+              </div>
+
+              <div class="content-card education-card">
+                <h3>M.Sc. in Information Technology</h3>
+                <p class="meta-line">Iran University of Science and Technology (IUST), Tehran, Iran</p>
+                <p class="meta-line">2017-2020</p>
+                <p><b>Thesis Title:</b> Deep learning-based Driver Distraction and Drowsiness Detection.</p>
+                <p><b>Description:</b> Analysis of drivers' faces to detect risky situations such as sleeping by designing deep neural networks for real-time tasks.</p>
+                <img src="13.jpg" alt="Master thesis project image">
+              </div>
+
+              <div class="content-card education-card">
+                <h3>Ph.D. in Computer Science and Engineering</h3>
+                <p class="meta-line">University of New South Wales (UNSW), Sydney, Australia</p>
+                <p class="meta-line">2021-2025</p>
+                <p><b>Thesis Title:</b> Toward a transparent world: axiomatic explainable artificial intelligence.</p>
+                <p><b>Description:</b> Developing algorithms that can generate automated justification and reasoning for AI systems based on axioms.</p>
+                <img src="7.jpg" alt="PhD thesis project image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section6">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>News</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="news-grid">
+              <article class="news-card upcoming">
+                <div class="news-meta">
+                  <time datetime="2026-08-15">August 15, 2026</time>
+                  <span class="news-tag">Upcoming</span>
+                </div>
+                <p>
+                  AI is here, let's welcome it! I will have a workshop session related
+                  to optimising ChatGPT and Codex in the work environment. More details are coming.
+                </p>
+              </article>
+
+              <article class="news-card">
+                <div class="news-meta">
+                  <time datetime="2026-07-10">July 10, 2026</time>
+                  <span class="news-tag">Conference</span>
+                </div>
+                <p>
+                  I presented our work, <b>From Axioms to Transparency: A User-Centric
+                  Axiomatic Approach for Explainable AI in Participatory Budgeting</b>,
+                  at the International Conference on AI and Emerging Technology for Sustainable
+                  Future (ICAISF 2026) in Italy.
+                </p>
+              </article>
+
+              <article class="news-card">
+                <div class="news-meta">
+                  <time datetime="2026-03-01">March 1, 2026</time>
+                  <span class="news-tag">Career</span>
+                </div>
+                <p>
+                  I am starting a new role as a Data Scientist at the City Futures Research Centre,
+                  where I apply large language models (LLMs) and machine learning techniques to improve
+                  development application processes in the urban construction sector.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
