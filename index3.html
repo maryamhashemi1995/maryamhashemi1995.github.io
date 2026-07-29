@@ -15,46 +15,133 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
+* { box-sizing: border-box; }
 
-.skills {
-  text-align: right;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: white;
+.imageme {
+  width: 100%;
 }
 
-.py {width: 90%; height: 30px; background-color:  #424949;}
-.cp {width: 65%; height: 30px; background-color:     #424949;}
-.html {width: 65%; height: 30px; background-color:    #424949;}
-.matlab {width: 60%; height: 30px; background-color:    #424949;}
-.android {width: 60%; height: 30px; background-color:  #424949;}
-.LaTex {width: 100%; height: 30px; background-color:    #424949;}
-.opencv {width: 100%; height: 30px; background-color:   #424949; }
-.keras {width: 80%; height: 30px; background-color:     #424949; }
-.ten {width: 80%; height: 30px; background-color:      #424949; }
-.win {width: 80%; height: 30px; background-color:      #424949; }
-.lin {width: 40%; height: 30px; background-color:      #424949; }
-.learn {width: 90%; height: 30px; background-color:      #424949; }
-.pytorch {width: 90%; height: 30px; background-color:      #424949; }
-.gym {width: 90%; height: 30px; background-color:      #424949; }  
-
-.city {
-    color: #fff;
-    width: 55%;
-    right: 10%;
-    left: 35%;
-    position: relative;
-    min-height: 10vh;
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+.imageme img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-  
- .imageme{
-        height: 100%;
-        width: 100%
-    }
-  
+
+.section .container {
+  width: min(100%, 1080px);
+}
+
+.content-shell {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.about-copy,
+.content-card,
+.publication-list,
+.news-list {
+  width: 100%;
+  text-align: left;
+}
+
+.about-copy p,
+.content-card p,
+.publication-list li,
+.news-list li {
+  max-width: none;
+  line-height: 1.8;
+}
+
+.publication-list,
+.news-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.publication-list li,
+.news-list li {
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.publication-list a,
+.content-card a {
+  font-weight: 600;
+}
+
+.skills-group,
+.education-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.content-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.content-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.skill-item + .skill-item {
+  margin-top: 16px;
+}
+
+.skill-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.skill-track {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f5a623 0%, #f76b1c 100%);
+}
+
+.education-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  border-radius: 14px;
+}
+
+.education-card p:last-child,
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+.meta-line {
+  margin-bottom: 0.6rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 767px) {
+  .content-card {
+    padding: 20px;
+  }
+}
 </style>
 
     <title>Maryam Hashemi, Ph.D.</title>
@@ -74,25 +161,25 @@ https://templatemo.com/tm-531-reflux
 
   <body>
     <div id="page-wraper">
-      <!-- Sidebar Menu -->
       <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
         <div id="menu" class="menu">
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="imageme">
-              <a href="#"><img src="Image.jpeg" /></a>
+              <a href="#section1"><img src="Image.jpeg" alt="Portrait of Maryam Hashemi" /></a>
             </div>
             <div class="author-content">
               <h4>Maryam Hashemi, Ph.D.</h4>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
                 <li><a href="#section2">Computer Skills</a></li>
                 <li><a href="#section3">Publications</a></li>
                 <li><a href="#section4">Education</a></li>
                 <li><a href="#section5">CV</a></li>
-                <li><a href="#section5">News</a></li>
+                <li><a href="#section6">News</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -101,411 +188,212 @@ https://templatemo.com/tm-531-reflux
                   <a href="mailto:maryamhashemi1995@gmail.com"><i class="fa fa-envelope"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
+                  <a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                 <a href="https://scholar.google.com/citations?user=PcZblrsAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i>
-                 </a>
+                  <a href="https://scholar.google.com/citations?user=PcZblrsAAAAJ&amp;hl=en"><i class="fa fa-graduation-cap"></i></a>
                 </li>
               </ul>
-            
+            </div>
           </div>
         </div>
       </div>
 
       <section class="section about-me" data-section="section1">
         <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <p
-          
-                <p>Hi there! This is Maryam Hashemi’s personal page.</p>
-
-<p>I’m an AI scientist based in Sydney. Currently, I work as a Data Scientist at the City Futures Research Centre, where I analyze large-scale datasets related to urban development in Australia and apply large language models (LLMs) and machine learning techniques to extract insights.</p>
-
-<p>My expertise lies in Artificial Intelligence (AI), Machine Learning (ML), and the development of intelligent systems. I am particularly passionate about transparent and trustworthy AI, leveraging AI for social good, and solving real-world problems.</p>
-
-<p>The best way to reach me is via email, which you can find at the bottom left of this page. To stay updated with my latest work and activities, please visit the “News” section at the bottom of the page.</p>
-
-
-
-
-  <section class="section my-services" data-section="section2">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Computer Skills</h2>
-      <div class="line-dec"></div>
-    </div>
-    <div class="row">
-      <div class="isotope-wrapper">
-        <form class="isotope-toolbar">
-          <label><input type="radio" data-type="all" checked="" name="isotope-filter" /><span>All</span></label>
-          <label><input type="radio" data-type="people" name="isotope-filter" /><span>Programming Skills</span></label>
-          <label><input type="radio" data-type="nature" name="isotope-filter" /><span>Libraries & Frameworks</span></label>
-          <label><input type="radio" data-type="animals" name="isotope-filter" /><span>OS</span></label>
-        </form>
-
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="all">
-            <p>Python</p>
-            <div class="skills py">90%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>C++</p>
-            <div class="skills cp">65%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>HTML</p>
-            <div class="skills html">65%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>MATLAB</p>
-            <div class="skills matlab">60%</div>
-          </div>
-
-
-          <div class="isotope-item" data-type="all">
-            <p>TensorFlow</p>
-            <div class="skills ten">90%</div>
-          </div>
-
-              <div class="isotope-item" data-type="all">
-            <p>PyTorch</p>
-            <div class="skills pytorch">50%</div>
-          </div>
-          
-          <div class="isotope-item" data-type="all">
-            <p>Keras</p>
-            <div class="skills keras">80%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>Scikit-Learn</p>
-            <div class="skills learn">90%</div>
-          </div>
-
-          
-          <div class="isotope-item" data-type="all">
-            <p>Transformers</p>
-            <div class="skills LaTex">100%</div>
-          </div>
-          
-          <div class="isotope-item" data-type="all">
-            <p>OpenCV</p>
-            <div class="skills opencv">100%</div>
-          </div>
-
-
-
-          <div class="isotope-item" data-type="all">
-            <p>Gym</p>
-            <div class="skills gym">80%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>Windows</p>
-            <div class="skills win">80%</div>
-          </div>
-
-          <div class="isotope-item" data-type="all">
-            <p>Linux</p>
-            <div class="skills lin">40%</div>
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>About Me</h2>
+              <div class="line-dec"></div>
+            </div>
+            <div class="about-copy">
+              <p>Hi there. This is Maryam Hashemi’s personal page.</p>
+              <p>I’m an AI scientist based in Sydney. Currently, I work as a Data Scientist at the City Futures Research Centre, where I analyse large-scale datasets related to urban development in Australia and apply large language models (LLMs) and machine learning techniques to extract insights.</p>
+              <p>My expertise lies in Artificial Intelligence (AI), Machine Learning (ML), and the development of intelligent systems. I am particularly passionate about transparent and trustworthy AI, leveraging AI for social good, and solving real-world problems.</p>
+              <p>The best way to reach me is by email, which you can find in the left-side menu. To stay updated with my latest work and activities, please visit the News section below.</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="people">
-            <p>Python</p>
-            <div class="skills py">90%</div>
-          </div>
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Computer Skills</h2>
+              <div class="line-dec"></div>
+            </div>
 
-          <div class="isotope-item" data-type="people">
-            <p>C++</p>
-            <div class="skills cp">65%</div>
-          </div>
+            <div class="skills-group">
+              <div class="content-card">
+                <h3>Programming</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Python</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>C++</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>HTML</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>MATLAB</span><span>60%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Android</span><span>60%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+              </div>
 
-          <div class="isotope-item" data-type="people">
-            <p>HTML</p>
-            <div class="skills html">65%</div>
-          </div>
+              <div class="content-card">
+                <h3>Libraries and Frameworks</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>TensorFlow</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>PyTorch</span><span>50%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Keras</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Scikit-learn</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Transformers</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>OpenCV</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Gym</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+              </div>
 
-          <div class="isotope-item" data-type="people">
-            <p>Android</p>
-            <div class="skills android">60%</div>
+              <div class="content-card">
+                <h3>Operating Systems</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Windows</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Linux</span><span>40%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 40%;"></div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="nature">
-            <p>TensorFlow</p>
-            <div class="skills ten">90%</div>
-          </div>
-
-          
-          <div class="isotope-item" data-type="nature">
-            <p>PyTorch</p>
-            <div class="skills pytorch">50%</div>
-          </div>
-
-          <div class="isotope-item" data-type="nature">
-            <p>Keras</p>
-            <div class="skills keras">80%</div>
-          </div>
-
-          <div class="isotope-item" data-type="nature">
-            <p>Scikit-Learn</p>
-            <div class="skills learn">90%</div>
-          </div>
-
-          <div class="isotope-item" data-type="nature">
-            <p>Transormers</p>
-            <div class="skills opencv">100%</div>
-          </div>
-
-          
-          <div class="isotope-item" data-type="nature">
-            <p>OpenCV</p>
-            <div class="skills opencv">100%</div>
-          </div>
-
-          <div class="isotope-item" data-type="nature">
-            <p>Gym</p>
-            <div class="skills gym">80%</div>
-          </div>
-        </div>
-
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="animals">
-            <p>Windows</p>
-            <div class="skills win">80%</div>
-          </div>
-
-          <div class="isotope-item" data-type="animals">
-            <p>Linux</p>
-            <div class="skills lin">40%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-            
+      </section>
 
       <section class="section my-work" data-section="section3">
         <div class="container">
-          <div class="section-heading">
-            <h2>Publications</h2>
-            <div class="line-dec"></div>
-            <span
-              >1- Driver Safety Development: Real-Time Driver Drowsiness Detection System Based on Convolutional Neural Network. <b> Maryam Hashemi</b>, Alireza Mirrashid and Aliasghar Beheshti Shirazi, SN Computer Science Journal, Springer, 2020.</span
-            >
-            <p><a href="https://link.springer.com/article/10.1007/s42979-020-00306-9">Paper</a></p>
-
-            <span
-              >2- Towards Safer Roads: A Deep Learning-Based Multimodal Fatigue Monitoring System. <b>Maryam Hashemi</b>, Bahar Farahani and Farshad Firouzi, International Conference on Omni-layer Intelligent Systems (COINS), IEEE, 2020.</span
-            >
-            <p><a href="https://ieeexplore.ieee.org/document/9191418">Paper</a></p>
-          
-            <span
-              >3- Detection and identification of defects in 3D-printed dielectric structures via thermographic inspection and deep neural networks. Barbara Szymanik, Grzegorz Psuj, <b>Maryam Hashemi</b>, and Przemyslaw Lopato, Materials Journal, MDPI, 2021. </span
-            >
-            <p><a href="https://www.mdpi.com/1996-1944/14/15/4168">Paper</a></p>
-            
-            <span
-              >4- Delve into Multiple Sclerosis (MS) Lesion Exploration: A Modified Attention U-Net for MS Lesion Segmentation in Brain MRI. <b>Maryam Hashemi</b>, Mahsa Akhbari, and Christian Jutten, Computers in Biology and Medicine Journal, Pergamon, 2022.</span
-            >
-            <p><a href="https://www.sciencedirect.com/science/article/pii/S0010482522001949">Paper</a></p>
-            </p>
-          
-          <span
-              >5- Understanding User Preferences in Explainable Artificial Intelligence: A Survey and a Mapping Function Proposal. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024.</span
-            >
-            <p><a href="https://dl.acm.org/doi/10.1145/3733837">Paper</a></p>
-
-              <span
-              >6- A User-Centric Exploration of Axiomatic Explainable AI in Participatory Budgeting. <b> Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024.</span
-            >
-            
-            </p>
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Publications</h2>
+              <div class="line-dec"></div>
+            </div>
+            <ol class="publication-list">
+              <li>Driver Safety Development: Real-Time Driver Drowsiness Detection System Based on Convolutional Neural Network. <b>Maryam Hashemi</b>, Alireza Mirrashid and Aliasghar Beheshti Shirazi, SN Computer Science Journal, Springer, 2020. <a href="https://link.springer.com/article/10.1007/s42979-020-00306-9">Paper</a></li>
+              <li>Towards Safer Roads: A Deep Learning-Based Multimodal Fatigue Monitoring System. <b>Maryam Hashemi</b>, Bahar Farahani and Farshad Firouzi, International Conference on Omni-layer Intelligent Systems (COINS), IEEE, 2020. <a href="https://ieeexplore.ieee.org/document/9191418">Paper</a></li>
+              <li>Detection and identification of defects in 3D-printed dielectric structures via thermographic inspection and deep neural networks. Barbara Szymanik, Grzegorz Psuj, <b>Maryam Hashemi</b>, and Przemyslaw Lopato, Materials Journal, MDPI, 2021. <a href="https://www.mdpi.com/1996-1944/14/15/4168">Paper</a></li>
+              <li>Delve into Multiple Sclerosis (MS) Lesion Exploration: A Modified Attention U-Net for MS Lesion Segmentation in Brain MRI. <b>Maryam Hashemi</b>, Mahsa Akhbari, and Christian Jutten, Computers in Biology and Medicine Journal, Pergamon, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S0010482522001949">Paper</a></li>
+              <li>Understanding User Preferences in Explainable Artificial Intelligence: A Survey and a Mapping Function Proposal. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024. <a href="https://dl.acm.org/doi/10.1145/3733837">Paper</a></li>
+              <li>A User-Centric Exploration of Axiomatic Explainable AI in Participatory Budgeting. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024.</li>
+            </ol>
           </div>
         </div>
       </section>
 
-              
-<section class="section my-work" data-section="section4">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Education</h2>
-      <div class="line-dec"></div>
-    </div>
-    <div class="row">
-      <div class="isotope-wrapper">
-        <form class="isotope-toolbar">
-          <label>
-            <input
-              type="radio"
-              data-type="all"
-              checked=""
-              name="isotope-filter"
-            />
-            <span>All</span>
-          </label>
-          <label>
-            <input
-              type="radio"
-              data-type="people"
-              name="isotope-filter"
-            />
-            <span>B.Sc.</span>
-          </label>
-          <label>
-            <input
-              type="radio"
-              data-type="nature"
-              name="isotope-filter"
-            />
-            <span>M.Sc.</span>
-          </label>
-          <!-- Commented out the following label for 'Internship' -->
-          <!-- 
-          <label>
-            <input
-              type="radio"
-              data-type="animals"
-              name="isotope-filter"
-            />
-            <span>Internship</span>
-          </label>
-          -->
-          <label>
-            <input
-              type="radio"
-              data-type="animals"
-              name="isotope-filter"
-            />
-            <span>Ph.D.</span>
-          </label>
-        </form>
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="all">
-            <span>&#8226;</span> 
-            <span>Bachelor of science in Electrical Engineering, 2013-2017. </span> <br>
-            <span>&#8226;</span> 
-             <span>University of Isfahan, Isfahan, Iran.</span><br>
-          </div>
-          
-          <div class="isotope-item" data-type="all">
-            <span>&#8226;</span>
-            <span>Master of science in Information Technology, 2017-2020.</span><br>
-            <span>&#8226;</span>
-             <span>Iran University of Science and Technology (IUST), Tehran, Iran.</span><br>
-          </div>
-          
-          <div class="isotope-item" data-type="all">
-            <span>&#8226;</span>
-            <span>Researcher at school of electrical engineering, 2019-2020. </span><br>  
-           <span> West Pomeranian University of Technology (ZUT),  Szczecin, Poland.</span><br>
-          </div>
-          
-          <div class="isotope-item" data-type="all">
-            <span>&#8226;</span>
-            <span>Ph.D. candidate at school of computer science and engineering, 2021-2025. </span><br>   
-          <span>&#8226;</span>
-            <span> University of New South Wales (UNSW), Sydney, Australia. </span><br>
-          </div>
-        </div>
-        
-        <div class="isotope-box">
-          <div class="isotope-item" data-type="nature">
-            <span>&#8226;</span>
-            <span>Master of science in Information Technology, 2017-2020. </span><br>
-            <span>&#8226;</span> 
-            <span>  Iran University of Science and Technology (IUST), Tehran, Iran. </span><br>
-            <span>&#8226;</span> 
-            <span>Thesis Title: Deep learning-based Driver Distraction and Drowsiness Detection. </span><br>
-            <span>&#8226;</span> 
-            <span>Description: Analysis of driver's face to find risky situations (e.g., sleeping) through designing deep neural networks for real-time tasks.</span>
-            <img src="13.jpg" alt="Thesis Image">
-          </div>
-
-          <div class="isotope-item" data-type="people">
-            <span>&#8226;</span> 
-            <span>Bachelor of science in Electrical Engineering, 2013-2017. </span><br>
-            <span>&#8226;</span> 
-            <span>University of Isfahan, Isfahan, Iran.</span><br>
-            <span>&#8226;</span> 
-            <span>Thesis Title: Designing an Android application to have an Intelligent Greenhouse.</span><br>
-            <span>&#8226;</span> 
-            <span>Description: Control of vital conditions of plants by Internet Of Things with an Android application.</span><br>
-            <img src="6.jpg" alt="Thesis Image">
-          </div>
-          
-          <!-- Commented out the following code block -->
-          <!-- 
-          <div class="isotope-item" data-type="animals">
-            <span>&#8226;</span>
-            <span>West Pomeranian University of Technology (ZUT)</span>
-            <p>Researcher at West Pomeranian University of Technology, (2019-2020)</p>
-            <span>Szczecin, Poland.</p>
-            <p>Project Title: Deep Learning-based defect analysis in 3D composite by thermal imaging.</p>
-            <p>Description: Detection and identification of defects in 3D printed dielectric structure using thermographic inspection and deep neural networks.</p>
-            <img src="4.jpg" alt="Project Image">
-          </div>
-          -->
-          
-          <div class="isotope-item" data-type="animals">
-            <span>&#8226;</span>
-             <span>Ph.D. candidate at school of computer science and engineering, 2021-2025. </span><br>
-            <span>&#8226;</span> 
-            <span>University of New South Wales (UNSW), Sydney, Australia. </span><br>
-            <span>&#8226;</span> 
-            <span>Thesis Title: Toward a transparent world: axiomatic explainable artificial intelligence.</span><br>
-            <span>&#8226;</span> 
-            <span>Description: Developing algorithms that can make automated justification and reasoning for AI systems based on axioms.</span><br>
-            <img src="7.jpg" alt="Thesis Image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      
-      <section class="section contact-me" data-section="section5">
+      <section class="section my-work" data-section="section4">
         <div class="container">
-          <div class="section-heading">
-            <h2>CV</h2>
-            <div class="line-dec"></div>
-            <p><a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3">To see my CV, click here.</a></p>
-            <span> You can also send me an email for a Pdf CV.
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Education</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="education-grid">
+              <div class="content-card education-card">
+                <h3>B.Sc. in Electrical Engineering</h3>
+                <p class="meta-line">University of Isfahan, Isfahan, Iran</p>
+                <p class="meta-line">2013-2017</p>
+                <p><b>Thesis Title:</b> Designing an Android application to have an Intelligent Greenhouse.</p>
+                <p><b>Description:</b> Control of vital plant conditions through Internet of Things technologies and an Android application.</p>
+                <img src="6.jpg" alt="Bachelor thesis project image">
+              </div>
+
+              <div class="content-card education-card">
+                <h3>M.Sc. in Information Technology</h3>
+                <p class="meta-line">Iran University of Science and Technology (IUST), Tehran, Iran</p>
+                <p class="meta-line">2017-2020</p>
+                <p><b>Thesis Title:</b> Deep learning-based Driver Distraction and Drowsiness Detection.</p>
+                <p><b>Description:</b> Analysis of drivers' faces to detect risky situations such as sleeping by designing deep neural networks for real-time tasks.</p>
+                <img src="13.jpg" alt="Master thesis project image">
+              </div>
+
+              <div class="content-card education-card">
+                <h3>Research Experience</h3>
+                <p class="meta-line">West Pomeranian University of Technology (ZUT), Szczecin, Poland</p>
+                <p class="meta-line">2019-2020</p>
+                <p>Researcher at the School of Electrical Engineering, working on deep learning-based defect analysis in 3D composite structures using thermal imaging.</p>
+              </div>
+
+              <div class="content-card education-card">
+                <h3>Ph.D. in Computer Science and Engineering</h3>
+                <p class="meta-line">University of New South Wales (UNSW), Sydney, Australia</p>
+                <p class="meta-line">2021-2025</p>
+                <p><b>Thesis Title:</b> Toward a transparent world: axiomatic explainable artificial intelligence.</p>
+                <p><b>Description:</b> Developing algorithms that can generate automated justification and reasoning for AI systems based on axioms.</p>
+                <img src="7.jpg" alt="PhD thesis project image">
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section contact-me" data-section="section5">
         <div class="container">
-          <div class="section-heading">
-            <h2>News</h2>
-            <div class="line-dec"></div>
-            
-          <span>I am starting a new role as a Data Scientist at the City Futures Research Centre, where I apply large language models (LLMs) and machine learning techniques to improve development application processes in the urban construction sector.</p>
-          <span>I recently concluded my time at QUT to transition into a new rle. It was a rewarding experience to work with an outstanding team at QUT and RACQ, where I developed and applied my expertise in
-            fuel market modelling and economic modelling to improve predictive outcomes.</p>
-            <span> I was recently awarded a $12,000 Writing Fellowship grant to support and promote high-quality publications at UNSW.</p>
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>CV</h2>
+              <div class="line-dec"></div>
+            </div>
+            <div class="contact-grid">
+              <div class="content-card">
+                <p><a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3">View my CV on LinkedIn</a></p>
+                <p>You can also email me if you would like a PDF version of my CV.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+
+      <section class="section contact-me" data-section="section6">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>News</h2>
+              <div class="line-dec"></div>
+            </div>
+            <ol class="news-list">
+              <li>I am starting a new role as a Data Scientist at the City Futures Research Centre, where I apply large language models (LLMs) and machine learning techniques to improve development application processes in the urban construction sector.</li>
+              <li>I recently concluded my time at QUT to transition into a new role. It was a rewarding experience to work with an outstanding team at QUT and RACQ, where I developed and applied my expertise in fuel market modelling and economic modelling to improve predictive outcomes.</li>
+              <li>I was recently awarded a $12,000 Writing Fellowship grant to support and promote high-quality publications at UNSW.</li>
+            </ol>
+          </div>
+        </div>
       </section>
     </div>
 
