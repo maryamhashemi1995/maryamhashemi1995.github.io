@@ -62,6 +62,62 @@
 .publication-list li,
 .news-list li {
   margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.publication-list a,
+.content-card a {
+  font-weight: 600;
+}
+
+<style>
+* { box-sizing: border-box; }
+
+.imageme {
+  width: 100%;
+}
+
+.imageme img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section .container {
+  width: min(100%, 1080px);
+}
+
+.content-shell {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.about-copy,
+.content-card,
+.publication-list,
+.news-list {
+  width: 100%;
+  text-align: left;
+}
+
+.about-copy p,
+.content-card p,
+.publication-list li,
+.news-list li {
+  max-width: none;
+  line-height: 1.8;
+}
+
+.publication-list,
+.news-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.publication-list li,
+.news-list li {
+  margin-bottom: 1.25rem;
   color: #000;
 }
 
@@ -73,10 +129,18 @@
 .skills-group,
 .education-grid,
 .contact-grid {
+.contact-grid,
+.career-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
+
+.content-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
 
 .content-card {
   background: rgba(255, 255, 255, 0.06);
@@ -136,6 +200,76 @@
   margin-bottom: 0.6rem;
   color: rgba(255, 255, 255, 0.82);
 }
+
+.content-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+.career-card {
+  border-top: 4px solid #f76b1c;
+}
+
+.skill-item + .skill-item {
+  margin-top: 16px;
+.career-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #000;
+}
+
+.skill-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+.career-card li + li {
+  margin-top: 0.75rem;
+}
+
+.skill-track {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  overflow: hidden;
+.role-title {
+  margin-bottom: 0.45rem;
+  color: #000;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f5a623 0%, #f76b1c 100%);
+}
+
+.education-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  border-radius: 14px;
+}
+
+.education-card p:last-child,
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+.meta-line {
+  margin-bottom: 0.6rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 767px) {
+  .content-card {
+    padding: 20px;
+  }
+}
+</style>
 
 @media (max-width: 767px) {
   .content-card {
@@ -227,14 +361,146 @@ https://templatemo.com/tm-531-reflux
               <h4>Maryam Hashemi, Ph.D.</h4>
             </div>
             <nav class="main-nav" role="navigation">
+  <body>
+    <div id="page-wraper">
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="imageme">
+              <a href="#section1"><img src="Image.jpeg" alt="Portrait of Maryam Hashemi" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Maryam Hashemi, Ph.D.</h4>
+            </div>
+            <nav class="main-nav" role="navigation">
               <ul class="main-menu">
                 <li><a href="#section1">About Me</a></li>
                 <li><a href="#section2">Computer Skills</a></li>
                 <li><a href="#section3">Publications</a></li>
                 <li><a href="#section4">Education</a></li>
+                <li><a href="#section5">CV</a></li>
+                <li><a href="#section4">Career</a></li>
+                <li><a href="#section5">Education</a></li>
                 <li><a href="#section6">News</a></li>
               </ul>
             </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="mailto:maryamhashemi1995@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=PcZblrsAAAAJ&amp;hl=en"><i class="fa fa-graduation-cap"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>About Me</h2>
+              <div class="line-dec"></div>
+            </div>
+            <div class="about-copy">
+              <p>Hi there. This is Maryam Hashemi’s personal page.</p>
+              <p>I’m an AI scientist based in Sydney. Currently, I work as a Data Scientist at the City Futures Research Centre, where I analyse large-scale datasets related to urban development in Australia and apply large language models (LLMs) and machine learning techniques to extract insights.</p>
+              <p>My expertise lies in Artificial Intelligence (AI), Machine Learning (ML), and the development of intelligent systems. I am particularly passionate about transparent and trustworthy AI, leveraging AI for social good, and solving real-world problems.</p>
+              <p>The best way to reach me is by email, which you can find in the left-side menu. To stay updated with my latest work and activities, please visit the News section below.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>Computer Skills</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="skills-group">
+              <div class="content-card">
+                <h3>Programming</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Python</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>C++</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>HTML</span><span>65%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>MATLAB</span><span>60%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Android</span><span>60%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h3>Libraries and Frameworks</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>TensorFlow</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>PyTorch</span><span>50%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Keras</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Scikit-learn</span><span>90%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Transformers</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>OpenCV</span><span>100%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Gym</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h3>Operating Systems</h3>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Windows</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-label"><span>Linux</span><span>40%</span></div>
+                  <div class="skill-track"><div class="skill-bar" style="width: 40%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
             <div class="social-network">
               <ul class="soial-icons">
                 <li>
@@ -371,6 +637,18 @@ https://templatemo.com/tm-531-reflux
               <li>Detection and identification of defects in 3D-printed dielectric structures via thermographic inspection and deep neural networks. Barbara Szymanik, Grzegorz Psuj, <b>Maryam Hashemi</b>, and Przemyslaw Lopato, Materials Journal, MDPI, 2021. <a href="https://www.mdpi.com/1996-1944/14/15/4168">Paper</a></li>
               <li>Delve into Multiple Sclerosis (MS) Lesion Exploration: A Modified Attention U-Net for MS Lesion Segmentation in Brain MRI. <b>Maryam Hashemi</b>, Mahsa Akhbari, and Christian Jutten, Computers in Biology and Medicine Journal, Pergamon, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S0010482522001949">Paper</a></li>
               <li>Understanding User Preferences in Explainable Artificial Intelligence: A Survey and a Mapping Function Proposal. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024. <a href="https://dl.acm.org/doi/10.1145/3733837">Paper</a></li>
+              <li>A User-Centric Exploration of Axiomatic Explainable AI in Participatory Budgeting. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024.</li>
+            </ol>
+            <div class="section-heading">
+              <h2>Publications</h2>
+              <div class="line-dec"></div>
+            </div>
+            <ol class="publication-list">
+              <li>Driver Safety Development: Real-Time Driver Drowsiness Detection System Based on Convolutional Neural Network. <b>Maryam Hashemi</b>, Alireza Mirrashid and Aliasghar Beheshti Shirazi, SN Computer Science Journal, Springer, 2020. <a href="https://link.springer.com/article/10.1007/s42979-020-00306-9">Paper</a></li>
+              <li>Towards Safer Roads: A Deep Learning-Based Multimodal Fatigue Monitoring System. <b>Maryam Hashemi</b>, Bahar Farahani and Farshad Firouzi, International Conference on Omni-layer Intelligent Systems (COINS), IEEE, 2020. <a href="https://ieeexplore.ieee.org/document/9191418">Paper</a></li>
+              <li>Detection and identification of defects in 3D-printed dielectric structures via thermographic inspection and deep neural networks. Barbara Szymanik, Grzegorz Psuj, <b>Maryam Hashemi</b>, and Przemyslaw Lopato, Materials Journal, MDPI, 2021. <a href="https://www.mdpi.com/1996-1944/14/15/4168">Paper</a></li>
+              <li>Delve into Multiple Sclerosis (MS) Lesion Exploration: A Modified Attention U-Net for MS Lesion Segmentation in Brain MRI. <b>Maryam Hashemi</b>, Mahsa Akhbari, and Christian Jutten, Computers in Biology and Medicine Journal, Pergamon, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S0010482522001949">Paper</a></li>
+              <li>Understanding User Preferences in Explainable Artificial Intelligence: A Survey and a Mapping Function Proposal. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, 2024. <a href="https://dl.acm.org/doi/10.1145/3733837">Paper</a></li>
               <li>From Axioms to Transparency: A User-Centric Axiomatic Approach for Explainable AI in Participatory Budgeting. <b>Maryam Hashemi</b>, Ali Darejeh, and Francisco Cruz, International Conference on AI and Emerging Technology for Sustainable Future (ICAISF 2026), July 2026, Catania, Italy.</li>
               <li>A User Centric Axiomatic Path to Explainable Reinforcement Learning. <b>Maryam Hashemi</b>, Ali Darejeh, Angel Ayala, and Francisco Cruz, 2026 (Under review).</li>
             </ol>
@@ -382,6 +660,118 @@ https://templatemo.com/tm-531-reflux
         <div class="container">
           <div class="content-shell">
             <div class="section-heading">
+              <h2>Education</h2>
+              <h2>Career</h2>
+              <div class="line-dec"></div>
+            </div>
+
+            <div class="education-grid">
+              <div class="content-card education-card">
+                <h3>B.Sc. in Electrical Engineering</h3>
+                <p class="meta-line">University of Isfahan, Isfahan, Iran</p>
+                <p class="meta-line">2013-2017</p>
+                <p><b>Thesis Title:</b> Designing an Android application to have an Intelligent Greenhouse.</p>
+                <p><b>Description:</b> Control of vital plant conditions through Internet of Things technologies and an Android application.</p>
+                <img src="6.jpg" alt="Bachelor thesis project image">
+            <div class="career-grid">
+              <div class="content-card career-card">
+                <h3 class="role-title">Data Scientist</h3>
+                <p class="meta-line">City Futures Research Centre, UNSW, Australia</p>
+                <p class="meta-line">May 2026 - Present</p>
+                <ul>
+                  <li>Scraped, collected, and maintained Australian development and construction application data using PostgreSQL and APIs.</li>
+                  <li>Developed conversational AI language agents using RAG systems to classify applications, generate recommendations, and predict application processing timelines.</li>
+                </ul>
+              </div>
+
+              <div class="content-card education-card">
+                <h3>M.Sc. in Information Technology</h3>
+                <p class="meta-line">Iran University of Science and Technology (IUST), Tehran, Iran</p>
+                <p class="meta-line">2017-2020</p>
+                <p><b>Thesis Title:</b> Deep learning-based Driver Distraction and Drowsiness Detection.</p>
+                <p><b>Description:</b> Analysis of drivers' faces to detect risky situations such as sleeping by designing deep neural networks for real-time tasks.</p>
+                <img src="13.jpg" alt="Master thesis project image">
+              <div class="content-card career-card">
+                <h3 class="role-title">AI Engineer</h3>
+                <p class="meta-line">Queensland University of Technology (QUT), Australia</p>
+                <p class="meta-line">January 2026 - May 2026</p>
+                <ul>
+                  <li>Designed and implemented a novel agent-based model (ABM) in Python to simulate and forecast pricing dynamics in the Brisbane fuel retail market.</li>
+                  <li>Developed predictive spatio-temporal machine learning models and data analysis tools using Python, Pandas, TensorFlow, and Scikit-learn to generate data-driven insights for stakeholders.</li>
+                </ul>
+              </div>
+
+              <div class="content-card education-card">
+                <h3>Research Experience</h3>
+                <p class="meta-line">West Pomeranian University of Technology (ZUT), Szczecin, Poland</p>
+                <p class="meta-line">2019-2020</p>
+                <p>Researcher at the School of Electrical Engineering, working on deep learning-based defect analysis in 3D composite structures using thermal imaging.</p>
+              <div class="content-card career-card">
+                <h3 class="role-title">AI Engineer</h3>
+                <p class="meta-line">University of New South Wales (UNSW), Australia</p>
+                <p class="meta-line">March 2025 - November 2025</p>
+                <ul>
+                  <li>Designed and implemented personalised conversational AI agents using large language models to improve user interaction and comprehension.</li>
+                  <li>Researched state-of-the-art techniques and developed the solution in Python using the Transformers library and GPT-based APIs.</li>
+                  <li>Evaluated system performance and refined the model to improve response quality, with 69% of users expressing interest in using the conversational personalised agent in the future.</li>
+                </ul>
+              </div>
+
+              <div class="content-card education-card">
+                <h3>Ph.D. in Computer Science and Engineering</h3>
+                <p class="meta-line">University of New South Wales (UNSW), Sydney, Australia</p>
+                <p class="meta-line">2021-2025</p>
+                <p><b>Thesis Title:</b> Toward a transparent world: axiomatic explainable artificial intelligence.</p>
+                <p><b>Description:</b> Developing algorithms that can generate automated justification and reasoning for AI systems based on axioms.</p>
+                <img src="7.jpg" alt="PhD thesis project image">
+              <div class="content-card career-card">
+                <h3 class="role-title">Lecturer and Tutor</h3>
+                <p class="meta-line">University of New South Wales (UNSW), Australia</p>
+                <p class="meta-line">November 2022 - Present</p>
+                <ul>
+                  <li>Taught courses including Artificial Intelligence, Deep Learning and Neural Networks, and Advanced Machine Learning.</li>
+                  <li>Key focus areas include computer vision, neural networks, reinforcement learning, statistical models, and Python.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section5">
+      <section class="section my-work" data-section="section5">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>CV</h2>
+              <div class="line-dec"></div>
+            </div>
+            <div class="contact-grid">
+              <div class="content-card">
+                <p><a href="https://www.linkedin.com/in/maryam-hashemi-b0ab68a3">View my CV on LinkedIn</a></p>
+                <p>You can also email me if you would like a PDF version of my CV.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section6">
+        <div class="container">
+          <div class="content-shell">
+            <div class="section-heading">
+              <h2>News</h2>
+              <div class="line-dec"></div>
+            </div>
+            <ol class="news-list">
+              <li>I am starting a new role as a Data Scientist at the City Futures Research Centre, where I apply large language models (LLMs) and machine learning techniques to improve development application processes in the urban construction sector.</li>
+              <li>I recently concluded my time at QUT to transition into a new role. It was a rewarding experience to work with an outstanding team at QUT and RACQ, where I developed and applied my expertise in fuel market modelling and economic modelling to improve predictive outcomes.</li>
+              <li>I was recently awarded a $12,000 Writing Fellowship grant to support and promote high-quality publications at UNSW.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
               <h2>Education</h2>
               <div class="line-dec"></div>
             </div>
@@ -532,4 +922,3 @@ https://templatemo.com/tm-531-reflux
     </script>
   </body>
 </html>
-
